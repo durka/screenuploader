@@ -1,0 +1,28 @@
+import getpass
+
+# The path where the screenuploader script will live.
+INSTALL_PREFIX = '/Users/%s/bin' % getpass.getuser()
+
+# The path to scan for screenshots. Usually this is your Desktop
+# unless you have changed that with 'defaults write' magic.
+# (see http://osxdaily.com/2011/01/26/change-the-screenshot-save-file-location-in-mac-os-x/)
+WATCH_PATH = '/Users/%s/Desktop' % getpass.getuser()
+
+# These three parameters configure the server. You should arrange
+# things such that uploading a file to SERVER_NAME:SERVER_DIR/x.jpg
+# causes it to be available at the URL URL_PREFIX/x.jpg.
+# For example, if your server is called "example", and files that you
+# put in the "public_html/images" subdirectory of your home directory end up
+# at "example.com/images", then you would set
+#   SERVER_NAME = 'example',
+#   SERVER_DIR  = 'public_html/images',
+#   URL_PREFIX  = 'http://www.example.com/images'
+# The SERVER_NAME can be a server listed in your ~/.ssh/config, or in the form
+# username@server. Either way you need to set up an SSH key
+# (see http://osxdaily.com/2012/05/25/how-to-set-up-a-password-less-ssh-login/)
+# because screenuploader does not know your password.
+# screenuploader will not create the directory on the server, so make sure it exists.
+SERVER_NAME = ''
+SERVER_DIR  = ''
+URL_PREFIX  = ''
+
