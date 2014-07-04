@@ -12,7 +12,7 @@ Setup
 =====
 0. Install dependencies:
     brew install terminal-notifier
-   (You can install it some other way, but it has to be at `/usr/local/bin/terminal-notifier`.
+   (You can install it some other way, but it has to be at `/usr/local/bin/terminal-notifier`.)
 1. Copy `config.py.example` to `config.py` and read the comments therein to set up your configuration.
 2. Run `install.py`. If it completes successfully it will say "Finished!" at the end.
 3. Take a screenshot and make sure everything works.
