@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-path=__WATCH_PATH__
-site=__URL_PREFIX__
-server=__SERVER_NAME__
-dir=__SERVER_DIR__
+path="__WATCH_PATH__"
+site="__URL_PREFIX__"
+server="__SERVER_NAME__"
+dir="__SERVER_DIR__"
 
 if [[ $# == 1 ]]; then
     scp "$1" $server:$dir

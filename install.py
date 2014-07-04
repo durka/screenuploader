@@ -5,8 +5,6 @@ import config
 config_vars = ('INSTALL_PREFIX', 'WATCH_PATH', 'SERVER_NAME', 'SERVER_DIR', 'URL_PREFIX')
 CONFIG = {var: config.__dict__[var] for var in config_vars}
 
-### EDITING NOT REQUIRED BELOW THIS LINE ###
-
 # make sure all the config values are filled in
 def check_config():
     def ask_create(n):
