@@ -23,7 +23,7 @@ def check_config():
     ask_create('INSTALL_PREFIX')
     ask_create('WATCH_PATH')
 
-# apply config and moves files into place
+# apply config and copy files into place
 def install():
     locations = {
             'screenuploader.sh': (CONFIG['INSTALL_PREFIX'], 0755),
